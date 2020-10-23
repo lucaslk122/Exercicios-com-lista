@@ -28,10 +28,21 @@ while True:
         print("Opção invalida, não será computado:")
     else:
         break
+total_votos = windows + unix + linux + netware + macOS + outro
+votos_operacioansi = {}
+votos =[]
+sistemas_operacionais = ["windows","unix","linux","netware","macOS","outro"]
+for i in len(total_votos):
+    votos.append(sistemas_operacionais[i])
+c = 0
+while c < len(sistemas_operacionais):
+    votos_operacioansi.update({sistemas_operacionais[c]:votos[c]})
+    c += 1
+print(votos)
+
+"""
 print("Sistema operacional            Votos            %")
 print("-"*50)
-total_votos = windows + unix + linux + netware + macOS + outro
-sistemas_operacionais = ["windows","unix","linux","netware","macOS","outro"]
 print(f"Windows Server:                 {windows}            {round(((windows*100) / total_votos),2)}")
 print(f"Unix:                           {unix}            {round(((unix*100) / total_votos),2)}")        
 print(f"Linux:                          {linux}              {round(((linux*100) / total_votos),2)}")
@@ -40,3 +51,4 @@ print(f"Mac OS:                         {macOS}           {round(((macOS*100) / 
 print(f"Outro:                          {outro}            {round(((outro*100) / total_votos),2)}")
 print("-"*50)
 print(f"Total :                         {total_votos}")
+"""
