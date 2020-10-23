@@ -31,7 +31,7 @@ while True:
 print("Sistema operacional            Votos            %")
 print("-"*50)
 total_votos = windows + unix + linux + netware + macOS + outro
-votos_servidores= [windows,unix,linux,netware,macOS,outro]
+sistemas_operacionais = ["windows","unix","linux","netware","macOS","outro"]
 print(f"Windows Server:                 {windows}            {round(((windows*100) / total_votos),2)}")
 print(f"Unix:                           {unix}            {round(((unix*100) / total_votos),2)}")        
 print(f"Linux:                          {linux}              {round(((linux*100) / total_votos),2)}")
